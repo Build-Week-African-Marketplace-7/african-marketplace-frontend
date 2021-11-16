@@ -8,13 +8,14 @@ const Categories = () => {
         <i class="fas fa-home"></i>
         </header>
       </div>
-      <nav>
+      <nav className="nav-catefories">
         <h1>Menu</h1>
         <a href="/">Home</a>
         <a href="">About</a>
         <a href="">Products</a>
         <a href="">Contact</a>
       </nav>
+
     </>
   )
 }
