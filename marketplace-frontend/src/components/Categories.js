@@ -6,10 +6,10 @@ const Categories = () => {
     <>
       <div className="header-categories">
         <header>
-        <i class="fas fa-home"></i>
+          <a><i class="fas fa-home"></i></a>
         </header>
       </div>
-      
+
         <nav className="nav-categories">
           <h1>Menu</h1>
           <a href="/">Home</a>
@@ -23,19 +23,36 @@ const Categories = () => {
         <button>Logout</button>
       </div>
 
-      <section>
-        <div>
+      <section className="top">
+        <div className="box">
           <p>Category 1</p>
           <p>Link</p>
         </div>
 
-        <div>
-          <p>Category 1</p>
+        <div className="box">
+          <p>Category 2</p>
           <p>Link</p>
         </div>
 
-        <div>
-          <p>Category 1</p>
+        <div className="box">
+          <p>Category 3</p>
+          <p>Link</p>
+        </div>
+      </section>
+
+      <section className="bottom">
+        <div className="box">
+          <p>Category 4</p>
+          <p>Link</p>
+        </div>
+
+        <div className="box">
+          <p>Category 5</p>
+          <p>Link</p>
+        </div>
+
+        <div className="box">
+          <p>Category 6</p>
           <p>Link</p>
         </div>
       </section>
