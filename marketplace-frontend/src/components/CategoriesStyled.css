@@ -7,17 +7,39 @@
   position: relative;
 }
 
+.nav-categories {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 20vh;
+  justify-content: flex-end;
+  position: absolute;
+  margin-left: 75%;
+  align-items: flex-start;
+}
+
+/*styling the two sections that contains the boxes */
 .top, .bottom { 
   border: 1px solid black;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  margin-left: 5%;
+  margin: 2%;
 }
 
-.nav-categories {
+
+.welcome {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box {
   border: 1px solid black;
-  width: 30vh;
-  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 15%;
 }

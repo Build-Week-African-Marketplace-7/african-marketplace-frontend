@@ -18,7 +18,7 @@ const Categories = () => {
           <a href="">Contact</a>
         </nav>
 
-      <div>
+      <div class="welcome">
         <h2>Welcome User!</h2>
         <button>Logout</button>
       </div>
