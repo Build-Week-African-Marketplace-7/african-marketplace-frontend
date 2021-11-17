@@ -1,14 +1,11 @@
+import React from 'react'
+import Home from './components/Home'
 import './App.css';
-
-//Importing my changes from Categories
 import Categories from './components/Categories'
 
 function App() {
   return (
-    <div className="App">
-      <h1>African Marketplace</h1>
-      <Categories />
-    </div>
+      <Home />
   );
 }
 
