@@ -1,4 +1,5 @@
 import React from 'react'
+import './CategoriesStyled.css'
 import '../App.css'
 import '../index.css'
 import {Link} from 'react-router-dom'
@@ -8,9 +9,10 @@ const Categories = () => {
     <>
       <div className="header-categories">
         <header>
-          <h1>WELCOME TO AFRICAN MARKETPLACE</h1>
+          <a><i class="fas fa-home"></i></a>
         </header>
       </div>
+
       <nav className="nav-categories">
         <h2>Menu</h2>
         <Link to="/">Home</Link>
