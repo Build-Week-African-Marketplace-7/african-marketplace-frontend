@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import '../App.css'
+
+
 const Div = styled.div`
     display:flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -29,8 +32,10 @@ export default function Home () {
     return (
         <Div>
             <h1>AFRICAN MARKETPLACE</h1>
-           {/* <Link id="enter-site" to="/About">*/}
-            <Button> Enter </Button>
+            <Link id="enter-site" to="/about">
+            <Button id="enter-site-button" type="button" name="Enter"> Enter </Button>
+            </Link>
         </Div>
+            
     )
 }
