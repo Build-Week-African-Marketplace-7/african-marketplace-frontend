@@ -1,22 +1,24 @@
-import React from 'react'
-import './CategoriesStyled.css'
+import React from "react";
+import "./CategoriesStyled.css";
 
 const Categories = () => {
   return (
     <>
       <div className="header-categories">
         <header>
-          <a><i class="fas fa-home"></i></a>
+          <a href="link">
+            <i class="fas fa-home"></i>
+          </a>
         </header>
       </div>
 
-        <nav className="nav-categories">
-          <h1>Menu</h1>
-          <a href="/">Home</a>
-          <a href="">About</a>
-          <a href="">Products</a>
-          <a href="">Contact</a>
-        </nav>
+      <nav className="nav-categories">
+        <h1>Menu</h1>
+        <a href="/">Home</a>
+        <a href="link">About</a>
+        <a href="link">Products</a>
+        <a href="link">Contact</a>
+      </nav>
 
       <div class="welcome">
         <h2>Welcome User!</h2>
@@ -56,11 +58,9 @@ const Categories = () => {
           <p>Link</p>
         </div>
       </section>
-      <footer>
-        
-      </footer>
+      <footer></footer>
     </>
-  )
-}
+  );
+};
 
-export default Categories
+export default Categories;

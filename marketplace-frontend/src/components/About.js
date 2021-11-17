@@ -1,10 +1,10 @@
-import React,{useState} from 'react'
-import styled from 'styled-components'
-import {Link} from 'react-router-dom'
-import '../App.css'
+import React, { useState } from "react";
+import styled from "styled-components";
+// import { Link } from "react-router-dom";
+import "../App.css";
 
 const MenuLabel = styled.label`
-  background-color: #B6EDC8;
+  background-color: #b6edc8;
   position: fixed;
   top: 6rem;
   right: 6rem;
@@ -43,7 +43,6 @@ const Icon = styled.span`
   &::after {
     top: ${(props) => (props.clicked ? "0" : "0.8rem")};
     transform: ${(props) => (props.clicked ? "rotate(-135deg)" : "rotate(0)")};
-    
   }
   ${MenuLabel}:hover &::before {
     top: ${(props) => (props.clicked ? "0" : "-1rem")};
@@ -54,25 +53,23 @@ const Icon = styled.span`
 `;
 
 const Styledabout = styled.h2`
-      font-family:Arial, Helvetica, sans-serif;
-      font-size:61px;
-      padding: 3%;
-      color:whitesmoke;
-      background-color: black;
-  `
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 61px;
+  padding: 3%;
+  color: whitesmoke;
+  background-color: black;
+`;
 
 export default function About() {
-  
-const [click, setClick] = useState(false);
-const handleClick = () => setClick(!click);
-  
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
   return (
-    <>  
-        <Styledabout> About African Marketplace </Styledabout>
-        <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
-                <Icon clicked={click}>&nbsp;</Icon>
-        </MenuLabel>
+    <>
+      <Styledabout> About African Marketplace </Styledabout>
+      <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
+        <Icon clicked={click}>&nbsp;</Icon>
+      </MenuLabel>
     </>
   );
 }
-
