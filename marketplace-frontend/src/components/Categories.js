@@ -1,22 +1,23 @@
 import React from 'react'
-import './CategoriesStyled.css'
+import '../App.css'
+import '../index.css'
+import {Link} from 'react-router-dom'
 
 const Categories = () => {
   return (
     <>
       <div className="header-categories">
         <header>
-          <a><i class="fas fa-home"></i></a>
+          <h1>WELCOME TO AFRICAN MARKETPLACE</h1>
         </header>
       </div>
-
-        <nav className="nav-categories">
-          <h1>Menu</h1>
-          <a href="/">Home</a>
-          <a href="">About</a>
-          <a href="">Products</a>
-          <a href="">Contact</a>
-        </nav>
+      <nav className="nav-categories">
+        <h2>Menu</h2>
+        <Link to="/">Home</Link>
+        <Link to="/about"> About </Link>
+        <Link to="/categories">Products</Link>
+        <Link to="/contact">Contact</Link>
+      </nav>
 
       <div class="welcome">
         <h2>Welcome User!</h2>
