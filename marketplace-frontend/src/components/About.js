@@ -1,77 +1,29 @@
-import React,{useState} from 'react'
-import styled from 'styled-components'
+import React from 'react'
 import {Link} from 'react-router-dom'
 import '../App.css'
 
-const MenuLabel = styled.label`
-  background-color: #B6EDC8;
-  position: fixed;
-  top: 6rem;
-  right: 6rem;
-  border-radius: 50%;
-  height: 7rem;
-  width: 7rem;
-  cursor: pointer;
-  z-index: 1000;
-  box-shadow: 0 1rem 3rem rgba(182, 237, 200, 0.3);
-  text-align: center;
-`;
-
-const Icon = styled.span`
-  position: relative;
-  background-color: ${(props) => (props.clicked ? "transparent" : "black")};
-  width: 3rem;
-  height: 2px;
-  display: inline-block;
-  margin-top: 3.5rem;
-  transition: all 0.3s;
-  &::before,
-  &::after {
-    content: "";
-    background-color: black;
-    width: 3rem;
-    height: 2px;
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    transition: all 0.3s;
-  }
-  &::before {
-    top: ${(props) => (props.clicked ? "0" : "-0.8rem")};
-    transform: ${(props) => (props.clicked ? "rotate(135deg)" : "rotate(0)")};
-  }
-  &::after {
-    top: ${(props) => (props.clicked ? "0" : "0.8rem")};
-    transform: ${(props) => (props.clicked ? "rotate(-135deg)" : "rotate(0)")};
-    
-  }
-  ${MenuLabel}:hover &::before {
-    top: ${(props) => (props.clicked ? "0" : "-1rem")};
-  }
-  ${MenuLabel}:hover &::after {
-    top: ${(props) => (props.clicked ? "0" : "1rem")};
-  }
-`;
-
-const Styledabout = styled.h2`
-      font-family:Arial, Helvetica, sans-serif;
-      font-size:61px;
-      padding: 3%;
-      color:whitesmoke;
-      background-color: black;
-  `
 
 export default function About() {
   
-const [click, setClick] = useState(false);
-const handleClick = () => setClick(!click);
-  
   return (
     <>  
-        <Styledabout> About African Marketplace </Styledabout>
-        <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
-                <Icon clicked={click}>&nbsp;</Icon>
-        </MenuLabel>
+    <nav>
+      <h2> Menu </h2>
+        <ul>
+          <Link to="/home">
+              <li> Home </li>
+          </Link>
+            <Link to="/about">
+              <li> About </li>
+            </Link>
+            <Link to="/categories">
+              <li> Products </li>
+            </Link>
+            <Link to="contact">
+              <li> Contact </li>
+            </Link>
+        </ul>
+    </nav>
     </>
   );
 }
