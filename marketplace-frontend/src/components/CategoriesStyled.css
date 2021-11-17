@@ -10,13 +10,27 @@
 .nav-categories {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  width: 20vh;
-  justify-content: flex-end;
+  /* border: 1px solid black; */
+  /* width: 100%; */
+  justify-content: space-between;
   position: absolute;
   margin-left: 75%;
-  align-items: flex-start;
+  margin-top: 0%;
+  align-items: center;
+  }
+.nav-categories a {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  margin: 5%;
+  padding: 10%;
+  text-decoration: none;
 }
+ .nav-categories h1{
+   font-size: 62px;
+   background-color: white;
+   color: black;
+ } 
 
 /*styling the two sections that contains the boxes */
 .top, .bottom { 
@@ -42,4 +56,9 @@
   align-items: center;
   flex-direction: column;
   width: 15%;
+}
+.box img {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
 }
