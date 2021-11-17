@@ -1,42 +1,78 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 import '../App.css'
 
 const MenuLabel = styled.label`
-  background-color: #b6edc8;
-  /* position: fixed; */
-  /* top: 6rem;
+  background-color: #B6EDC8;
+  position: fixed;
+  top: 6rem;
   right: 6rem;
   border-radius: 50%;
   height: 7rem;
-  width: 7rem; */
+  width: 7rem;
   cursor: pointer;
   z-index: 1000;
   box-shadow: 0 1rem 3rem rgba(182, 237, 200, 0.3);
   text-align: center;
 `;
 
-export default function App() {
-  return (
-    <div className="App">
-      <h2> About African Marketplace</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-      <button>Login</button>
+const Icon = styled.span`
+  position: relative;
+  background-color: ${(props) => (props.clicked ? "transparent" : "black")};
+  width: 3rem;
+  height: 2px;
+  display: inline-block;
+  margin-top: 3.5rem;
+  transition: all 0.3s;
+  &::before,
+  &::after {
+    content: "";
+    background-color: black;
+    width: 3rem;
+    height: 2px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s;
+  }
+  &::before {
+    top: ${(props) => (props.clicked ? "0" : "-0.8rem")};
+    transform: ${(props) => (props.clicked ? "rotate(135deg)" : "rotate(0)")};
+  }
+  &::after {
+    top: ${(props) => (props.clicked ? "0" : "0.8rem")};
+    transform: ${(props) => (props.clicked ? "rotate(-135deg)" : "rotate(0)")};
+    
+  }
+  ${MenuLabel}:hover &::before {
+    top: ${(props) => (props.clicked ? "0" : "-1rem")};
+  }
+  ${MenuLabel}:hover &::after {
+    top: ${(props) => (props.clicked ? "0" : "1rem")};
+  }
+`;
 
-      <div id="div1">
-        <MenuLabel>Menu</MenuLabel>
-      </div>
-    </div>
+const Styledabout = styled.h2`
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:61px;
+      padding: 3%;
+      color:whitesmoke;
+      background-color: black;
+  `
+
+export default function About() {
+  
+const [click, setClick] = useState(false);
+const handleClick = () => setClick(!click);
+  
+  return (
+    <>  
+        <Styledabout> About African Marketplace </Styledabout>
+        <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
+                <Icon clicked={click}>&nbsp;</Icon>
+        </MenuLabel>
+    </>
   );
 }
-
-
 
