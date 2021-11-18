@@ -21,8 +21,9 @@ const Categories = () => {
         <Link to="/">Home</Link>
         <Link to="/about"> About </Link>
         <Link to="/categories">Products</Link>
-        <Link to="/contact">Contact</Link>
         <Link to="/sell"> Sell </Link>
+        <Link to="/contact">Contact</Link>
+        
       </nav>
 
       <div class="welcome">
@@ -68,11 +69,9 @@ const Categories = () => {
           <button id="nutpr" type="button" onClick={() => history.push('/category')}>Nuts</button>
         </div>
       </section>
-      <footer>
-        
-      </footer>
+      <footer></footer>
     </>
-  )
-}
+  );
+};
 
-export default Categories
+export default Categories;
