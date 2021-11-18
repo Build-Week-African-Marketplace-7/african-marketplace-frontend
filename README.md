@@ -1,6 +1,6 @@
 # African-Marketplace-Frontend
 
-<img src="https://images.unsplash.com/photo-1605319760321-91c129fd463a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2767&q=80" width="200">
+<img src="https://images.unsplash.com/photo-1605319760321-91c129fd463a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2767&q=80" width="1000" height="300">
 
 ![Wireframe]
 https://wireframe.cc/pro/pp/82b535399493646
