@@ -4,7 +4,6 @@ import About from "./components/About";
 import AddItem from "./components/AddItem";
 import Register from "./components/Register";
 import Categories from "./components/Categories";
-import Category from "./components/Category";
 import Contact from "./components/Contact";
 import Login from "./components/Login"
 import { Switch, Route } from "react-router-dom";
@@ -44,9 +43,6 @@ function App() {
         </Route>
         <Route path="/login">
           <Login />
-        </Route>
-        <Route path="/category">
-          <Category />
         </Route>
         <Route path="/categories">
           <Categories />
