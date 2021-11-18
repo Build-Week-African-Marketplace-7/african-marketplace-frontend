@@ -1,0 +1,21 @@
+  /* .data3 {
+    display: flex;
+    border: 1px solid green;
+    padding-left: 50%; 
+  }
+  .data2 {
+    border: 1px solid green;;
+}
+.data1 {
+    border: 1px solid green;;
+} */
+.contact-right {
+    /* flex-basis: 40%; */
+    padding: 60px;
+    background: linear-gradient(to right, #13a2bb, #240b36);
+    color: #fff;
+    /* font-weight: "bold"; */
+    /* font-size: 20px; */
+    /* border: none; */
+  }
+  
