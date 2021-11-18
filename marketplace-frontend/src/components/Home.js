@@ -26,17 +26,17 @@ const Button = styled.button`
      font-weight:bold;
      
 `
-     
 
-export default function Home () {
+
+export default function Home() {
 
     return (
         <Div>
             <h1>AFRICAN MARKETPLACE</h1>
             <Link id="enter-site" to="/about">
-            <Button id="enter-site-button" type="button" name="Enter"> Enter </Button>
+                <Button id="enter-site-button" type="button" name="Enter"> Enter </Button>
             </Link>
         </Div>
-            
+
     )
 }
