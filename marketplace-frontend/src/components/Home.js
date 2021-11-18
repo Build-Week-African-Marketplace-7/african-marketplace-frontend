@@ -7,16 +7,16 @@ import '../index.css'
 
 const Div = styled.div`
     display:flex;
+    flex-direction:column;
     font-family: Arial, Helvetica, sans-serif;
-    flex-direction: column;
-    padding:16%;
+    padding:9.3%;
     align-items: center;
     justify-content: center;
-
 
 `
 const Button = styled.button`
      border: outset white;
+     margin-top:30px;
      margin-bottom: 30px;
      border-radius: 2.7%;
      font-size:30px;

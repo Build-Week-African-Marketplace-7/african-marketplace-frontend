@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- {/*background-image: url('./homepage.jpg');*/}
-  background-size: cover;
+  background-image: url('./homepage.jpg');
+  background-size:cover;
   background-repeat: no-repeat;
 }
 
@@ -15,6 +15,7 @@ h1{
   font-size: 90px;
   background-color: black;
   font-weight: bold;
+  margin-left: 3%;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -66,29 +67,7 @@ code {
  }
 
 /*styling the two sections that contains the boxes */
-.top, .bottom { 
-  border: 1px solid black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  width: 70%;
-  margin-left: 5%;
-  margin: 2%;
-}
 
-.welcome {
-  display: flex;
-  justify-content: space-between;
-}
-
-.box {
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 15%;
-}
 .abtsection {
   display: flex;
   flex-wrap: wrap;
@@ -97,6 +76,9 @@ code {
   margin-right: 50%;
 }
 button {
+  border-style: outset;
+  background-color: whitesmoke;
+  color:dark grey;
   margin: auto;
 
 }
@@ -121,4 +103,8 @@ h2{
   margin-top: 18px;
   justify-content: center;
   margin-left: 16%;
+}
+
+h3{
+  color:whitesmoke;
 }
