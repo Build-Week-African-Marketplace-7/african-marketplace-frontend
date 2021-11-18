@@ -1,8 +1,9 @@
 # African-Marketplace-Frontend
-[!Wireframe]
+<img src="https://unsplash.com/photos/5r935yRz8Kg" width="200">
+![Wireframe]
 https://wireframe.cc/pro/pp/82b535399493646
 
-[!Architecture]
+![Architecture]
 https://docs.google.com/presentation/d/1GcscbWxOxk2ZqpGG_Bi4x3cPnEZ6YCP-3e4cxJQrN4o/edit#slide=id.p
 
 ## **Team:**
