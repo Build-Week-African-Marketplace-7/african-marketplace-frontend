@@ -5,9 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./homepage.jpg");
+  /* background-image: url("./homepage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+body::after {
+  content: "";
+  background: url("./homepage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 h1 {
   color: whitesmoke;
@@ -39,10 +52,19 @@ nav {
 }
 .addItemListing {
   background-color: white;
-  max-width: 40%;
+  max-width: 400px;
   margin: auto;
-  text-align: center;
 }
-.addInputs {
-  max-width: 50%;
+/* .addInputs {
+  max-width: 50%; */
+/* } */
+.addItemSection {
+  background-color: blue;
+  height: 100%;
+}
+.inputContainers {
+  display: flex;
+  background-color: red;
+  justify-content: space-between;
+  max-width: 100%;
 }
