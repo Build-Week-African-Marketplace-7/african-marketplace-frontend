@@ -5,7 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+  body::after {
+  content: "";
   background-image: url('./homepage.jpg');
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
   background-size:cover;
   background-repeat: no-repeat;
 }
@@ -59,11 +69,12 @@ code {
   margin: 5%;
   padding: 10%;
   text-decoration: none;
+  color:black;
 }
  .nav-categories h1{
    font-size: 62px;
-   background-color: white;
-   color: black;
+   background-color: black;
+   color: whitesmoke;
  }
 
 /*styling the two sections that contains the boxes */
@@ -78,7 +89,7 @@ code {
 button {
   border-style: outset;
   background-color: whitesmoke;
-  color:dark grey;
+  color:black;
   margin: auto;
 
 }
@@ -106,5 +117,5 @@ h2{
 }
 
 h3{
-  color:whitesmoke;
+  color:black;
 }

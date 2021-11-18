@@ -3,6 +3,8 @@ import Home from './components/Home'
 import About from './components/About'
 import Register from './components/Register'
 import Categories from './components/Categories'
+import Contact from './components/Contact'
+import Login from './components/Login'
 import { Switch, Route} from 'react-router-dom'
 import './App.css';
 import './index.css'
@@ -41,9 +43,15 @@ function App() {
             )
           })}
         </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
         
         <Route path="/categories">
           <Categories />
+        </Route>
+        <Route path="/Contact">
+          <Contact />
         </Route>
         <Route exact path="/">
           <Home />

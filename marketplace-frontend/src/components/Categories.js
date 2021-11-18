@@ -17,11 +17,12 @@ const Categories = () => {
       </div>
 
       <nav className="nav-categories">
-        <h2>Menu</h2>
+        <h1>Menu</h1>
         <Link to="/">Home</Link>
         <Link to="/about"> About </Link>
         <Link to="/categories">Products</Link>
         <Link to="/contact">Contact</Link>
+        <Link to="/sell"> Sell </Link>
       </nav>
 
       <div class="welcome">
@@ -32,7 +33,7 @@ const Categories = () => {
         <div className="box">
         <img src="https://images.unsplash.com/photo-1586802990196-ec7e6edd9739?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGVnZ3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="eggs" width="200" height="250"/>
           <h3>Dairy</h3>
-          <button id="dairypr" type="button" onClick={() => history.push('/category')}>Animal Products </button>
+          <button id="dairypr" type="button" onClick={() => history.push('/category')}> Animal Products </button>
         </div>
 
         <div className="box">
