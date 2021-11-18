@@ -1,75 +1,72 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-// import { Link } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "../App.css";
-
-const MenuLabel = styled.label`
-  background-color: #b6edc8;
-  position: fixed;
-  top: 6rem;
-  right: 6rem;
-  border-radius: 50%;
-  height: 7rem;
-  width: 7rem;
-  cursor: pointer;
-  z-index: 1000;
-  box-shadow: 0 1rem 3rem rgba(182, 237, 200, 0.3);
-  text-align: center;
-`;
-
-const Icon = styled.span`
-  position: relative;
-  background-color: ${(props) => (props.clicked ? "transparent" : "black")};
-  width: 3rem;
-  height: 2px;
-  display: inline-block;
-  margin-top: 3.5rem;
-  transition: all 0.3s;
-  &::before,
-  &::after {
-    content: "";
-    background-color: black;
-    width: 3rem;
-    height: 2px;
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    transition: all 0.3s;
-  }
-  &::before {
-    top: ${(props) => (props.clicked ? "0" : "-0.8rem")};
-    transform: ${(props) => (props.clicked ? "rotate(135deg)" : "rotate(0)")};
-  }
-  &::after {
-    top: ${(props) => (props.clicked ? "0" : "0.8rem")};
-    transform: ${(props) => (props.clicked ? "rotate(-135deg)" : "rotate(0)")};
-  }
-  ${MenuLabel}:hover &::before {
-    top: ${(props) => (props.clicked ? "0" : "-1rem")};
-  }
-  ${MenuLabel}:hover &::after {
-    top: ${(props) => (props.clicked ? "0" : "1rem")};
-  }
-`;
-
-const Styledabout = styled.h2`
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 61px;
-  padding: 3%;
-  color: whitesmoke;
-  background-color: black;
-`;
+import "../index.css";
 
 export default function About() {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+  const history = useHistory();
 
   return (
     <>
-      <Styledabout> About African Marketplace </Styledabout>
-      <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
-        <Icon clicked={click}>&nbsp;</Icon>
-      </MenuLabel>
+      <div className="header-categories">
+        <header>
+          <h1>WELCOME TO AFRICAN MARKETPLACE</h1>
+        </header>
+      </div>
+
+      <nav className="nav-categories">
+        <h1>Menu</h1>
+        <Link to="/">Home</Link>
+        <Link to="/about"> About </Link>
+        <Link to="/categories">Products</Link>
+        <Link to="/contact">Contact</Link>
+      </nav>
+
+      <div className="abtsection">
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages and web
+          page editors now use Lorem Ipsum as their default model text, and a
+          search for 'lorem ipsum' will uncover many web sites still in their
+          infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+        </p>
+        <p>
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a piece of classical Latin literature from 45 BC, making
+          it over 2000 years old. Richard McClintock, a Latin professor at
+          Hampden-Sydney College in Virginia, looked up one of the more obscure
+          Latin words, consectetur, from a Lorem Ipsum passage, and going
+          through the cites of the word in classical literature, discovered the
+          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
+          1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
+          Evil) by Cicero, written in 45 BC. This book is a treatise on the
+          theory of ethics, very popular during the Renaissance. The first line
+          of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
+          section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s
+          is reproduced below for those interested. Sections 1.10.32 and 1.10.33
+          from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
+          their exact original form, accompanied by English versions from the
+          1914 translation by H. Rackham.
+        </p>
+
+        <button id="loginbutton" type="button">
+          {" "}
+          Login{" "}
+        </button>
+        <button
+          id="regisbutton"
+          type="button"
+          onClick={() => history.push("/register")}
+        >
+          {" "}
+          Register{" "}
+        </button>
+      </div>
     </>
   );
 }
