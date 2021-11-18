@@ -18,13 +18,12 @@ const Contact = () => {
         <Link to="/">Home</Link>
         <Link to="/about"> About </Link>
         <Link to="/categories">Products</Link>
-        <Link to="/contact">Contact</Link>
         <Link to="/sell"> Sell </Link>
+        <Link to="/contact">Contact</Link>
+        
       </nav>
-      <div className="container">
+      <section className="container">
         <div className="contact-box">
-              <div className="contact-row">
-              </div>
           <div className="contact-right">
             <table>
               <div className="data1">
@@ -48,7 +47,7 @@ const Contact = () => {
             </table>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

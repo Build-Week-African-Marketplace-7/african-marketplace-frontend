@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
-import "../App.css";
 import "../index.css";
 
 export default function About() {
@@ -26,56 +25,11 @@ export default function About() {
       </nav>
      
       <div className ="abtsection">
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+          <p1>African Marketplace aims at providing a powerful international platform for African women to showcase their local agricultural and dairy products to the other African countries. We not only aim at giving them just a platform , our mission focuses on giving the farmers their freedom to set the price for their products competitively so that they receive what they deserve thereby propagating a fair-trade culture for these women in African regions. We believe in their products which are grown organically , harvested fresh, packed and preserved in high quality temperature controlled facilities and delivered efficiently to your doors. At African Marketplace we also provide support to these farmer women to help develop their business by educating them and providing them a voice to reach out to the world thus help them thrive. We put women as farmers, producers and customers at the centre of our business mission. </p1>
+          <p1>We at African Marketplace set ourselves apart from it's competitors by Providing Fair Trade platform for our users. Ability to sell products belonging to multitude of product categories which helps all specialty local producers and sellers to sell their products with ease.No cost to the producer to ship their products. No cost to the producer to ship their products. Set competitive prices keeping in mind the current market rates set by other sellers.</p1>
       
         <button id="loginbutton" type="button" onClick={() => history.push('/login')}> Login </button>
         <button id="regisbutton" type="button"  onClick={() => history.push('/register')}> Register </button>
-      </div>
-
-      <div className="abtsection">
-        <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for 'lorem ipsum' will uncover many web sites still in their
-          infancy. Various versions have evolved over the years, sometimes by
-          accident, sometimes on purpose (injected humour and the like).
-        </p>
-        <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-          1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-          Evil) by Cicero, written in 45 BC. This book is a treatise on the
-          theory of ethics, very popular during the Renaissance. The first line
-          of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-          section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s
-          is reproduced below for those interested. Sections 1.10.32 and 1.10.33
-          from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
-          their exact original form, accompanied by English versions from the
-          1914 translation by H. Rackham.
-        </p>
-
-        <button id="loginbutton" type="button">
-          {" "}
-          Login{" "}
-        </button>
-        <button
-          id="regisbutton"
-          type="button"
-          onClick={() => history.push("/register")}
-        >
-          {" "}
-          Register{" "}
-        </button>
       </div>
     </>
   );

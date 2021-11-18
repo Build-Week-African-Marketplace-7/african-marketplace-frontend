@@ -1,10 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AddItem = () => {
   return (
+  <>
+
+      <nav className="nav-categories">
+        <h1>Menu</h1>
+        <Link to="/">Home</Link>
+        <Link to="/about"> About </Link>
+        <Link to="/categories">Products</Link>
+        <Link to="/sell"> Sell </Link>
+        <Link to="/contact">Contact</Link>
+      </nav>
+    <div className="header-categories">
+        <header>
+          <h1> Create Product </h1>
+        </header>
+      </div>
+      <div>
+        
+      </div>
     <div className="addItemListing">
       <form className="addItemForm">
-        <h2>Add Item Listing</h2>
+      <h3> Add A Product </h3>
         <section className="addItemSection">
           <div className="inputContainers">
             <p className="addFormText">Name:</p>
@@ -45,6 +64,7 @@ const AddItem = () => {
         </section>
       </form>
     </div>
+  </>
   );
 };
 

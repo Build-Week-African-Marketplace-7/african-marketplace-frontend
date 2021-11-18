@@ -23,7 +23,6 @@ const Categories = () => {
         <Link to="/categories">Products</Link>
         <Link to="/sell"> Sell </Link>
         <Link to="/contact">Contact</Link>
-        
       </nav>
 
       <div class="welcome">

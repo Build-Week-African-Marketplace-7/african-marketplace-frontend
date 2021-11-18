@@ -74,6 +74,8 @@ code {
   /* border: 1px solid red; */
   margin: 5%;
   padding: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   text-decoration: none;
   color:black;
 }
@@ -115,29 +117,48 @@ h2 {
   margin-left: 34%;
 }
 .addItemListing {
-  background-color: white;
-  max-width: 400px;
-  margin: auto;
+  display: flex;
+  margin:7%;
+  padding:3%;
+  background-color: black;
+  max-width: 500px;
 }
 /* .addInputs {
   max-width: 50%; */
 /* } */
 .addItemSection {
-  background-color: blue;
   height: 100%;
 }
 .inputContainers {
   display: flex;
-  background-color: red;
+  margin-bottom:7%;
+  background-color: black;
+  color:white;
   justify-content: space-between;
   max-width: 100%;
 }
 .submit {
   margin-top: 18px;
   justify-content: center;
-  margin-left: 16%;
+  margin-left: 9%;
 }
 
 h3{
-  color:black;
+  color:white;
+  margin-top: 0px;
+  font-size: 54px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
+
+p1{
+  display: flex;
+  align-items: flex-start;
+  padding: 1.6em;
+  margin:auto;
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight:normal;
+}
+
