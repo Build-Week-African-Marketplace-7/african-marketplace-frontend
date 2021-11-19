@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# African-Marketplace-Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://images.unsplash.com/photo-1605319760321-91c129fd463a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2767&q=80" width="1000" height="300">
 
-## Available Scripts
+![Wireframe]
+https://wireframe.cc/pro/pp/82b535399493646
 
-In the project directory, you can run:
+![Architecture]
+https://docs.google.com/presentation/d/1GcscbWxOxk2ZqpGG_Bi4x3cPnEZ6YCP-3e4cxJQrN4o/edit#slide=id.p
 
-### `npm start`
+## **Team:**
+Adam Beuchert
+Bret Banger
+Chris Castillo
+Justin Rivera
+Kiran Letherwala
+Nithya Narayanan
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## **Our Mission:**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**EMPOWER WOMEN ENTREPRENEURSHIP**
+African Marketplace aims at providing a powerful international platform for African women to showcase their local agricultural and dairy products to the other African countries. We not only aim at giving them just a platform , our mission focuses on giving the farmers their freedom to set the price for their products competitively so that they receive what they deserve thereby propagating a fair-trade culture for these women in African regions. 
 
-### `npm test`
+We believe in their products which are grown organically , harvested fresh, packed and preserved in high quality temperature controlled facilities and delivered efficiently to your doors. At African Marketplace we also provide support to these farmer women to help develop their business by educating them and providing them a voice to reach out to the world thus help them thrive. We put women as farmers, producers and customers at the centre of our business mission. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Features:**
+We at African Marketplace set ourselves apart from it's competitors by :
 
-### `npm run build`
+1. Providing Fair Trade platform for our users.
+2. Ability to sell products belonging to multitude of product categories which helps all specialty local producers and sellers to sell their products with ease. 
+3. No cost to the producer to ship their products. 
+4. Set competitive prices keeping in mind the current market rates set by other sellers.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Development Frameworks:**
+1. React
+2. CSS
+3. reqres
+4. RDBMS
+5. Postman API
+6. SQL
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## **Target Audience:**
 
-### `npm run eject`
+Our target audience are mid and south african countries. Kenya, Uganda, Ethiopia. We aim to work with middle-aged under privileged women community lacking resources and means to work and make a living for themselves. We want to reach within these small local villages and communities in these countries and provide them with life -changing opportunities to make a good living so that the communities can flourish. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **Prototype Key Feature(s):**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We are working towards providing a completed functional web platform within 4 days where the user will have feature to select categories and add their selling item, set a competitive price and showcase the items. The platform will enable the user to have their own account to be able to perform functional transactions. 
