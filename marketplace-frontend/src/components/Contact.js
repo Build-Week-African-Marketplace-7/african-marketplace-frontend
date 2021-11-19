@@ -6,14 +6,13 @@ import {Link} from 'react-router-dom'
 const Contact = () => {
   return (
     <>
-
-      <div className="header-categories">
+      <div class="header-categories">
             <header>
             <h1>CONTACT US</h1>
             </header>
       </div>
 
-      <nav className="nav-categories">
+      <nav class="nav-categories">
         <h1>Menu</h1>
         <Link to="/">Home</Link>
         <Link to="/about"> About </Link>
@@ -22,32 +21,23 @@ const Contact = () => {
         <Link to="/contact">Contact</Link>
         
       </nav>
-      <section className="container">
-        <div className="contact-box">
-          <div className="contact-right">
-            <table>
-              <div className="data1">
-                <td>Email:</td>
-                <td>contact@africanmarketplace.com</td>
-              </div>
-              <div className="data2">
-                <td>Phone:</td>
-                <td>+1 832-149-0942</td>
-              </div>
-              <div className="data3">
-                <td>Address:</td>
-                <td>
-                    123 ABC Street
-                  <br />
-                  Houston, Texas
-                  <br />
-                  USA {" "}
-                </td>
-              </div>
-            </table>
+        <section class="top-section">
+          <div className="cont-left">
+            <h4>Email:</h4>
+            contact@africanmarketplace.com
+            <h4>Phone:</h4>
+            +1 832-149-0942
+            <h4>Address:</h4>
+            123 ABC Street
+            <br />
+            Houston, Texas
+            <br />
+            USA {" "}
           </div>
-        </div>
-      </section>
+          <div class="cont-right">
+            <img src="https://images.unsplash.com/photo-1570135460237-510ca82c6781?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1287&q=80" alt="cntimg" width="500" height="550" />
+          </div>
+        </section>
     </>
   );
 };
